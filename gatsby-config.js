@@ -15,10 +15,6 @@ var GSAobj = {
   "auth_provider_x509_cert_url": process.env.AUT_XCERT,
   "client_x509_cert_url": process.env.AUT_XCLI
 }
-require("dotenv").parse(GSAobj)
-console.log(GSAobj)
-
-
 
 module.exports = {
   siteMetadata: {
