@@ -1,6 +1,6 @@
-//require("dotenv").config({
-// path: `.env`,
-//})
+require("dotenv").config({
+ path: `.env`,
+})
 
 var credobj = {
   "type": process.env.ACC_TYPE,
@@ -14,6 +14,8 @@ var credobj = {
   "auth_provider_x509_cert_url": process.env.AUT_XCERT,
   "client_x509_cert_url": process.env.AUT_XCLI
 }
+
+console.log(credobj)
 
 module.exports = {
   siteMetadata: {
