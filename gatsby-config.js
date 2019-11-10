@@ -2,19 +2,21 @@ require("dotenv").config({
  path: `.env`,
 })
 
-
-var GSAobj = {
-  "type": process.env.ACC_TYPE,
-  "project_id": process.env.PROJ_ID,
-  "private_key_id": process.env.PRIV_KEYID,
-  "private_key": process.env.PRIV_KEY,
-  "client_email": process.env.CLIENT_M,
-  "client_id": process.env.CLIENT_I,
-  "auth_uri": process.env.AUT_URI,
-  "token_uri": process.env.AUT_TOK,
-  "auth_provider_x509_cert_url": process.env.AUT_XCERT,
-  "client_x509_cert_url": process.env.AUT_XCLI
-}
+var GSAobj = JSON.parse(process.env.GSA_API_KEY)
+console.log GSAobj
+//var GSAobj = {
+//  "type": process.env.ACC_TYPE,
+//  "project_id": process.env.PROJ_ID,
+//  "private_key_id": process.env.PRIV_KEYID,
+//  "private_key": str2,
+//  "client_email": process.env.CLIENT_M,
+//  "client_id": process.env.CLIENT_I,
+//  "auth_uri": process.env.AUT_URI,
+//  "token_uri": process.env.AUT_TOK,
+//  "auth_provider_x509_cert_url": process.env.AUT_XCERT,
+//  "client_x509_cert_url": process.env.AUT_XCLI
+//}
+//console.log(str2)
 
 module.exports = {
   siteMetadata: {
