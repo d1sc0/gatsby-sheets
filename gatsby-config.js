@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 
 var GSAobj = JSON.parse(process.env.GSA_API_KEY)
-console.log GSAobj
+console.log(GSAobj)
 //var GSAobj = {
 //  "type": process.env.ACC_TYPE,
 //  "project_id": process.env.PROJ_ID,
