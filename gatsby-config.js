@@ -2,6 +2,7 @@ require("dotenv").config({
  path: `.env`,
 })
 
+//grab private key and parse
 var GSAobj = JSON.parse(process.env.GSA_API_KEY)
 
 module.exports = {
