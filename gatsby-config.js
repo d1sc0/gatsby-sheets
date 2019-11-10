@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env`,
 })
 
-var cred = {
+var credobj = {
   "type": process.env.ACC_TYPE,
   "project_id": process.env.PROJ_ID,
   "private_key_id": process.env.PRIV_KEYID,
@@ -37,7 +37,7 @@ module.exports = {
     options: {
         spreadsheetId: '17FNz8R5YDdfnCXBeYbfjjyg6YiklNJsa7Qm6NtXPsXI',
         worksheetTitle: 'some-data',
-        credentials: cred,
+        credentials: credobj,
       },
     },
     {
