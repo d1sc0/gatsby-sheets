@@ -1,6 +1,6 @@
-require("dotenv").config({
-  path: `.env`,
-})
+//require("dotenv").config({
+// path: `.env`,
+//})
 
 var credobj = {
   "type": process.env.ACC_TYPE,
