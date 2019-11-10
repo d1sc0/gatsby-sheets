@@ -15,7 +15,6 @@ var credobj = {
   "client_x509_cert_url": process.env.AUT_XCLI
 }
 
-console.log(credobj)
 
 module.exports = {
   siteMetadata: {
@@ -59,3 +58,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+console.log(credobj)
