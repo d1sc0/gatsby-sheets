@@ -2,6 +2,7 @@ require("dotenv").config({
  path: `.env`,
 })
 
+
 var GSAobj = {
   "type": process.env.ACC_TYPE,
   "project_id": process.env.PROJ_ID,
@@ -15,8 +16,8 @@ var GSAobj = {
   "client_x509_cert_url": process.env.AUT_XCLI
 }
 require("dotenv").parse(GSAobj)
-
 console.log(GSAobj)
+
 
 
 module.exports = {
