@@ -3,16 +3,16 @@ require("dotenv").config({
 })
 
 var cred = {
-  "type": process.env.GATSBY_1,
-  "project_id": process.env.GATSBY_2,
-  "private_key_id": process.env.GATSBY_3,
-  "private_key": process.env.GATSBY_4,
-  "client_email": process.env.GATSBY_5,
-  "client_id": process.env.GATSBY_6,
-  "auth_uri": process.env.GATSBY_7,
-  "token_uri": process.env.GATSBY_8,
-  "auth_provider_x509_cert_url": process.env.GATSBY_9,
-  "client_x509_cert_url": process.env.GATSBY_10
+  "type": process.env.ACC_TYPE,
+  "project_id": process.env.PROJ_ID,
+  "private_key_id": process.env.PRIV_KEYID,
+  "private_key": process.env.PRIV_KEY,
+  "client_email": process.env.CLIENT_M,
+  "client_id": process.env.CLIENT_I,
+  "auth_uri": process.env.AUT_URI,
+  "token_uri": process.env.AUT_TOK,
+  "auth_provider_x509_cert_url": process.env.AUT_XCERT,
+  "client_x509_cert_url": process.env.AUT_XCLI
 }
 
 module.exports = {
