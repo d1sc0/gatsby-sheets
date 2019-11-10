@@ -2,7 +2,7 @@ require("dotenv").config({
  path: `.env`,
 })
 
-var credobj = {
+var GSAobj = {
   "type": process.env.ACC_TYPE,
   "project_id": process.env.PROJ_ID,
   "private_key_id": process.env.PRIV_KEYID,
@@ -14,6 +14,9 @@ var credobj = {
   "auth_provider_x509_cert_url": process.env.AUT_XCERT,
   "client_x509_cert_url": process.env.AUT_XCLI
 }
+require("dotenv").parse(GSAobj)
+
+console.log(GSAobj)
 
 
 module.exports = {
@@ -50,7 +53,7 @@ module.exports = {
       options: {
           spreadsheetId: '17FNz8R5YDdfnCXBeYbfjjyg6YiklNJsa7Qm6NtXPsXI',
           worksheetTitle: 'some-data',
-          credentials: credobj,
+          credentials: GSAobj,
         },
       },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -58,5 +61,3 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
-
-console.log(credobj)
