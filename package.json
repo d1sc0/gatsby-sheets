@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-disco",
+  "name": "gatsby-sheets",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to explore using google shees as a source for content",
   "version": "0.1.0",
   "author": "Stuart Mackenzie <ilovediscostu@gmail.com>",
   "dependencies": {
