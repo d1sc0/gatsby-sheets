@@ -8,7 +8,7 @@ This is an experiemnt made with Gatsby to explore building a simple static websi
 
 In testing this template I addtionally setup a script in the google sheet which would trigger build/deploy of the site when content was updated (using netlify webhook)
 
-'
+'''
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   // Or DocumentApp or FormApp.
@@ -28,4 +28,4 @@ var options = {
   
 UrlFetchApp.fetch('https://api.netlify.com/build_hooks/xxxxxxxxxxxxxx', options);
 }
-'
+'''
